@@ -5,7 +5,7 @@ data:
   command: "/bin/sh"
 
 install:
-  image: agileworks/maven
+  image: whylu/maven
   volumes:
     - ./:/app
   volumes_from:
@@ -14,7 +14,7 @@ install:
   command: "mvn install"
 
 test:
-  image: agileworks/maven
+  image: whylu/maven
   volumes:
     - ./:/app
   volumes_from:
@@ -23,7 +23,7 @@ test:
   command: "mvn test"
 
 server:
-  image: agileworks/maven
+  image: whylu/maven
   volumes:
     - ./:/app
   volumes_from:
@@ -34,7 +34,7 @@ server:
   command: "mvn spring-boot:run"
 
 package:
-  image: agileworks/maven
+  image: whylu/maven
   volumes:
     - ./:/app
   volumes_from:
