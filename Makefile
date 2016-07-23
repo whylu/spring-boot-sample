@@ -6,7 +6,7 @@ build-docker-prod-image:
 
 deploy-production:
 	- ssh jenkins@localhost docker rm -f java_sample_prod
-	ssh jenkins@localhost docker run -d --name java_sample_prod -p 8800:8000 agileworks/java_sample_prod
+	ssh jenkins@localhost docker run -d --name java_sample_prod -p 8800:8000 whylu/java_sample_prod
 
 deploy-default:
 	ssh jenkins@localhost mkdir -p deploy/release
