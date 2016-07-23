@@ -2,7 +2,7 @@ node {
   try{
     slackSend channel: '#integration', message: "started ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)", teamDomain: 'agileworks-tw', token: 'JhXFKEl6cBFoQ4v52BEJw9Mr'
     stage 'checkout project'
-    git url: 'https://github.com/agileworks-tw/spring-boot-sample.git'
+    git url: 'https://github.com/whylu/spring-boot-sample.git'
 
     stage 'check env'
 
